@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 public class MyListTest {
     @Test
-    public void addSimpleTest() {
+    public void addAndOrderElementsInListTest() {
         MyList test = new MyList<>();
         test.add(1);
         test.add(2);
@@ -21,7 +21,7 @@ public class MyListTest {
     }
 
     @Test
-    public void addTest2() {
+    public void addAndOrderElementsWithDoubleInListTest() {
         MyList test = new MyList<>();
         test.add(1);
         test.add(2);
@@ -36,7 +36,7 @@ public class MyListTest {
     }
 
     @Test
-    public void removeTest() {
+    public void checkRemoveFromListTest() {
         MyList test = new MyList<>();
         test.add(1);
         test.add(2);
@@ -51,7 +51,7 @@ public class MyListTest {
     }
 
     @Test
-    public void removeTest_Exception() {
+    public void removeIncorrectIndexFromListIsArrayIndexOutOfBoundsException() {
         MyList test = new MyList<>();
         test.add(1);
         test.add(2);
@@ -63,7 +63,7 @@ public class MyListTest {
     }
 
     @Test
-    public void iteratorTest() {
+    public void addElementsInlistUseIteratorTest() {
         MyList test = new MyList<>();
         test.add(1);
         test.add(2);
@@ -78,7 +78,7 @@ public class MyListTest {
     }
 
     @Test
-    public void equalsTest() {
+    public void checkEqualsUseTwoIdenticalArraysTest() {
         Integer[] array = new Integer[]{1, 2, 3};
 
         MyList test = new MyList<>(array);
@@ -88,7 +88,7 @@ public class MyListTest {
     }
 
     @Test
-    public void hashCodeTest() {
+    public void checkHashCodeUseTwoIdenticalArraysTest() {
 
         Integer[] array = new Integer[]{1,2,3};
         MyList test =  new MyList<>(array);
